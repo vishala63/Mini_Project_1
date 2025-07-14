@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Blog</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #444;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav a:hover {
+      background: #555;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .main {
+      flex: 70%;
+      padding: 20px;
+    }
+
+    .sidebar {
+      flex: 30%;
+      padding: 20px;
+      background: #e2e2e2;
+    }
+
+    .blog-post {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .blog-post h2 {
+      color: #333;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main, .sidebar {
+        flex: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Simple Blog</h1>
+    <p>Welcome to my blog website</p>
+  </header>
+
+  <nav>
+    <a href="index1.html">Home</a>
+    <a href="post.html">Posts</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="main">
+      <div class="blog-post">
+        <h2>First Blog Post</h2>
+        <p><em>Posted on June 1, 2025</em></p>
+        <p>This is a simple blog post layout using HTML and CSS. You can add more posts here easily.</p>
+      </div>
+
+      <div class="blog-post">
+        <h2>Second Blog Post</h2>
+        <p><em>Posted on May 30, 2025</em></p>
+        <p>Each post has a title, date, and some text. You can customize styles and structure as needed.</p>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h3>About Me</h3>
+      <p>Hello! I'm a blogger sharing thoughts and tutorials. Stay tuned for more....</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Simple Blog.... All rights reserved.</p>
+  </footer>
+</body>
+</html>
